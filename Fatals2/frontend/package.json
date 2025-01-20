@@ -2,11 +2,16 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  // "scripts": {
+  //   "dev": "next dev --turbopack",
+  //   "build": "next build",
+  //   "start": "next start",
+  //   "lint": "next lint"
+  // },
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+      "dev": "NODE_ENV=development next dev --turbopack",
+      "build": "NODE_ENV=production next build",
+      "start": "NODE_ENV=production next start"
   },
   "dependencies": {
     "flowbite": "^2.5.2",
